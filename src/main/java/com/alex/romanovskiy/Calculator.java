@@ -1,0 +1,5 @@
+package com.alex.romanovskiy;
+
+public interface Calculator <T extends Number> {
+    double calculateFees(T clubId);
+}
