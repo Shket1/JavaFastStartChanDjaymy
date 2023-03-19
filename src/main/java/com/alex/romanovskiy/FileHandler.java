@@ -25,7 +25,7 @@ public class FileHandler {
                 m.add(mem);
             }
         } catch (IOException e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
         return m;
     }
@@ -34,7 +34,7 @@ public class FileHandler {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("members.csv", true))){
             writer.write(mem + "\n");
         } catch (IOException e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
     }
 
